@@ -1,3 +1,7 @@
+{{ config (
+    materialized="table"
+)}}
+
 with kpifcts as (
     select
         unique_key,

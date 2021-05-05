@@ -4,7 +4,7 @@
 
 with kpifcts as (
     select
-        unique_key,
+        --unique_key,
         weather_id,
         entry_date,
         PRCP as precipitation,
@@ -13,7 +13,7 @@ with kpifcts as (
         TMAX as max_temp,
         TMIN as min_temp
     
-    from cloud-collective.Cloud_Collective_Warehouse.Weather, cloud-collective.Cloud_Collective_Warehouse.311SmokingComplaints
+    from cloud-collective.Cloud_Collective_Warehouse.Weather --cloud-collective.Cloud_Collective_Warehouse.311SmokingComplaints
     order by entry_date
 
 )
